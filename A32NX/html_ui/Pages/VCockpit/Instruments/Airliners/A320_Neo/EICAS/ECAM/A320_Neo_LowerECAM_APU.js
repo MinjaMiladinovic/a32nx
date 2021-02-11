@@ -13,6 +13,7 @@ var A320_Neo_LowerECAM_APU;
             super.connectedCallback();
             TemplateElement.call(this, this.init.bind(this));
         }
+        
         init() {
             this.APUGenInfo = this.querySelector("#APUGenInfo_On");
             this.APUGenAvailArrow = this.querySelector("#APUGenAvailArrow");
@@ -83,7 +84,7 @@ var A320_Neo_LowerECAM_APU;
             this.APUGenTitle.classList.toggle("APUGenTitleWarn", showApuData && !allParametersWithinAcceptableRange);
             this.APUGenTitle.classList.toggle("APUGenTitleInactive", !showApuData);
 
-            toggleVisibility(this.APUGenInfo, showApuData);
+            toggleVisibility(this.APUGenInfo, showApuData, parameter1, parameter2, parameter3);
 
             const available = SimVar.GetSimVarValue("L:A32NX_APU_AVAILABLE", "Bool");
             toggleVisibility(this.APUAvail, available);
