@@ -17,6 +17,38 @@ class Jet_PFD_AltimeterIndicator extends HTMLElement {
         this.hudAPAltitude = 0;
         this.isHud = false;
         this._aircraft = Aircraft.A320_NEO;
+                this.strokeSize = "3";
+        this.fontSize = 22;
+        this.refHeight = 0;
+        this.borderSize = 0;
+        this.graduationScrollPosX = 0;
+        this.graduationScrollPosY = 0;
+        this.nbPrimaryGraduations = 7;
+        this.nbSecondaryGraduations = 4;
+        this.totalGraduations = this.nbPrimaryGraduations + ((this.nbPrimaryGraduations - 1) * this.nbSecondaryGraduations);
+        this.graduationSpacing = 42;
+        this.groundRibbonHasFixedHeight = false;
+        this.groundLineSVGHeight = 0;
+        this.mtrsVisible = false;
+        this.hudAPAltitude = 0;
+        this.isHud = false;
+        this._aircraft = Aircraft.A320_NEO;
+                this.strokeSize = "3";
+        this.fontSize = 22;
+        this.refHeight = 0;
+        this.borderSize = 0;
+        this.graduationScrollPosX = 0;
+        this.graduationScrollPosY = 0;
+        this.nbPrimaryGraduations = 7;
+        this.nbSecondaryGraduations = 4;
+        this.totalGraduations = this.nbPrimaryGraduations + ((this.nbPrimaryGraduations - 1) * this.nbSecondaryGraduations);
+        this.graduationSpacing = 42;
+        this.groundRibbonHasFixedHeight = false;
+        this.groundLineSVGHeight = 0;
+        this.mtrsVisible = false;
+        this.hudAPAltitude = 0;
+        this.isHud = false;
+        this._aircraft = Aircraft.A320_NEO;
     }
     static get observedAttributes() {
         return ["hud"];
